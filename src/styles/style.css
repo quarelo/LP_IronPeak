@@ -65,7 +65,7 @@ body {
     z-index: 1;
 }
 
-.hero-container .layout-grid .heroContent{
+.hero-container .layout-grid .heroContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,16 +74,16 @@ body {
     z-index: 2;
 }
 
-.hero-container .layout-grid .heroContent img{
+.hero-container .layout-grid .heroContent img {
     width: 42%;
     margin-top: 50px;
 }
 
-.hero-container .layout-grid .heroContent .autoLayout-Hero{
+.hero-container .layout-grid .heroContent .autoLayout-Hero {
     width: 50%;
 }
 
-.hero-container .layout-grid .heroContent .autoLayout-Hero h3{
+.hero-container .layout-grid .heroContent .autoLayout-Hero h3 {
     font-family: MontserratBold;
     text-transform: uppercase;
     width: 90%;
@@ -92,11 +92,11 @@ body {
     color: white;
 }
 
-.hero-container .layout-grid .heroContent .autoLayout-Hero span{
+.hero-container .layout-grid .heroContent .autoLayout-Hero span {
     color: #034F71;
 }
 
-.hero-container .layout-grid .heroContent .autoLayout-Hero p{
+.hero-container .layout-grid .heroContent .autoLayout-Hero p {
     font-family: Montserrat;
     font-size: 18px;
 
@@ -105,7 +105,7 @@ body {
     margin-top: 15px;
 }
 
-.hero-container .layout-grid .heroContent .autoLayout-Hero button{
+.hero-container .layout-grid .heroContent .autoLayout-Hero button {
     font-family: MontserratSemiBold;
     font-size: 20px;
 
@@ -123,12 +123,12 @@ body {
     cursor: pointer;
 }
 
-.hero-container .layout-grid .heroContent .autoLayout-Hero button:hover{
+.hero-container .layout-grid .heroContent .autoLayout-Hero button:hover {
     color: white;
     background-color: #034F71;
 }
 
-#creationElement1{
+#creationElement1 {
     position: absolute;
     z-index: 2;
 
@@ -136,7 +136,7 @@ body {
     top: 450px;
 }
 
-#creationElement2{
+#creationElement2 {
     width: 25%;
     position: absolute;
     z-index: 2;
@@ -145,4 +145,196 @@ body {
     top: -50px;
 
     transform: rotate(-65deg);
+}
+
+.hero-container2 {
+    width: 100%;
+    height: 710px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container2 h3 {
+    font-family: MontserratSemiBold;
+    font-size: 60px;
+    text-align: center;
+
+    line-height: 1.1;
+
+    color: white;
+}
+
+.hero-container2 h3 span {
+    color: #E1F161;
+}
+
+.hero-container2 p {
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+
+    color: white;
+
+    margin: 30px 0;
+}
+
+.hero-container2 button {
+    width: 25%;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+
+    color: white;
+
+    background-color: transparent;
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+.products-container{
+    background-color: white;
+    width: 100vw;
+
+    padding-bottom: 100px;
+}
+
+.products-container .productContent1{
+    margin-top: 100px;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.products-container .productContent1 .productImg{
+    width: 40%;
+    height: 300px;
+    background-color: #E1F161;
+
+    border-bottom: 100px solid #E7F3FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0 50px 0 0;
+}
+
+.products-container .productContent1 .productImg img{
+    width: 100%;
+}
+
+.products-container .productContent1 .productImgSalt{
+    width: 40%;
+    height: 300px;
+    background-color: #57aabd5d;
+
+    border-bottom: 100px solid #E7F3FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0 50px 0 0;
+}
+
+.products-container .productContent1 .productImgSalt .new{
+    background-color: #034F71;
+    padding: 5px 20px;
+
+    border-radius: 50px;
+}
+
+.products-container .productContent1 .productImgSalt .new h4{
+    font-family: Montserrat;
+    color: white;
+    font-size: 16px;
+}
+
+#saltCaps{
+    width: 60%;
+}
+
+.products-container .productContent1 .productAbout{
+    width: 40%;
+
+    margin-right: 100px;
+}
+
+.products-container .productContent1 .productAbout h2{
+    font-family: MontserratSemiBold;
+    color: #034F71;
+    font-size: 80px;
+}
+
+.products-container .productContent1 .productAbout h2 span{
+    font-family: Montserrat;
+    color: #034F71;
+    font-size: 30px;
+}
+
+.products-container .productContent1 .productAbout p{
+    font-family: Montserrat;
+    color: #034F71;
+    font-size: 20px;
+
+    width: 75%;
+}
+
+
+
+
+
+.products-container .productContent2{
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.products-container .productContent2 .productImg{
+    width: 40%;
+    height: 300px;
+    background-color: #91C4CE;
+
+    border-bottom: 100px solid #E7F3FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px 0 0 0;
+}
+
+.products-container .productContent2 .productImg img{
+    width: 100%;
+}
+
+.products-container .productContent2 .productAbout{
+    width: 40%;
+
+    margin-left: 100px;
+}
+
+.products-container .productContent2 .productAbout h2{
+    font-family: MontserratSemiBold;
+    color: #034F71;
+    font-size: 80px;
+}
+
+.products-container .productContent2 .productAbout p{
+    font-family: Montserrat;
+    color: #034F71;
+    font-size: 20px;
+
+    width: 75%;
 }
