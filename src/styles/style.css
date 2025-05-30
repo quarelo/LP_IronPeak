@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #034F71;
+}
+
+/* Hero */
+
+.hero-container {
+    background-color: #E1F161;
+    width: 100%;
+    height: 720px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-container .layout-grid h1 {
+    font-family: BebasNeue;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: -0.2px;
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 450px;
+
+    position: absolute;
+    top: 18px;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-container .layout-grid .heroContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-container .layout-grid .heroContent img{
+    width: 42%;
+    margin-top: 50px;
+}
+
+.hero-container .layout-grid .heroContent .autoLayout-Hero{
+    width: 50%;
+}
+
+.hero-container .layout-grid .heroContent .autoLayout-Hero h3{
+    font-family: MontserratBold;
+    text-transform: uppercase;
+    width: 90%;
+    font-size: 70px;
+
+    color: white;
+}
+
+.hero-container .layout-grid .heroContent .autoLayout-Hero span{
+    color: #034F71;
+}
+
+.hero-container .layout-grid .heroContent .autoLayout-Hero p{
+    font-family: Montserrat;
+    font-size: 18px;
+
+    color: #034F71;
+
+    margin-top: 15px;
+}
+
+.hero-container .layout-grid .heroContent .autoLayout-Hero button{
+    font-family: MontserratSemiBold;
+    font-size: 20px;
+
+    color: #034F71;
+
+    width: 45%;
+    height: 40px;
+
+    border: none;
+    background-color: white;
+    border-radius: 50px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+.hero-container .layout-grid .heroContent .autoLayout-Hero button:hover{
+    color: white;
+    background-color: #034F71;
+}
+
+#creationElement1{
+    position: absolute;
+    z-index: 2;
+
+    left: -300px;
+    top: 450px;
+}
+
+#creationElement2{
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+
+    right: -200px;
+    top: -50px;
+
+    transform: rotate(-65deg);
+}
