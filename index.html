@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Peak</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("SEU_USER_ID"); // Substitua aqui
+        })();
+    </script>
     <link rel="stylesheet" href="/src/styles/style.css">
 </head>
 
@@ -21,7 +27,7 @@
                         sint
                         voluptatum? Repellat illo corporis minima eum quas, nulla neque, perferendis porro reprehenderit
                         temporibus fugit perspiciatis.</p>
-                    <button>Contate-nos</button>
+                    <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Contate-nos</button>
                 </div>
             </div>
         </div>
@@ -33,7 +39,7 @@
     <section class="hero-container2 layout-grid">
         <h3>A performance que<br><span>seus clientes</span> sentem na pele</h3>
         <p>Nossos produtos entregam resultados reais<br> da energia do treino ao desempenho nas provas. </p>
-        <button>Contate-nos</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Contate-nos</button>
     </section>
 
     <section class="products-container">
@@ -64,14 +70,115 @@
         <div class="productContent1">
             <div class="productImgSalt">
                 <img id="saltCaps" src="/src/assets/imgs/183bb44e161e40cb440d38e6a1f246f79ed9b6b8.png" alt="">
-                <div class="new"><h4>Novidade 🔥</h4></div>
+                <div class="new">
+                    <h4>Novidade 🔥</h4>
+                </div>
             </div>
 
             <div class="productAbout">
                 <h2>Cápsula de <br> sal<span>(eletrólitos)</span></h2>
-                <p>Reposição eficiente de sódio e minerais essenciais. Ideal para provas longas, treinos no calor ou clientes que buscam mais equilíbrio durante o exercício.</p>
+                <p>Reposição eficiente de sódio e minerais essenciais. Ideal para provas longas, treinos no calor ou
+                    clientes que buscam mais equilíbrio durante o exercício.</p>
             </div>
         </div>
+    </section>
+
+    <section class="about-container">
+        <div class="aboutContent layout-grid">
+            <h3>Por que escolher a Iron Peak?</h3>
+            <div>
+                <article>
+                    <img id="" src="/src/assets/imgs/Vector2.png" alt="">
+                    <h4>Faça seu teste de saída</h4>
+                    <p>Distribuímos condições especiais para novos parceiros testarem a aceitação dos nossos produtos
+                        com seus clientes. Sem riscos, só oportunidade.</p>
+                </article>
+                <article>
+                    <img id="" src="/src/assets/imgs/Vector.svg" alt="">
+                    <h4>Sem pedido mínimo</h4>
+                    <p>Comece do seu jeito, sem barreiras. Acreditamos em parcerias de longo prazo e crescimento
+                        conjunto.</p>
+                </article>
+                <article>
+                    <img id="" src="/src/assets/imgs/Vector3.svg" alt="">
+                    <h4>Produtos 100% puros</h4>
+                    <p>Sem misturas, sem promessas vazias. Entregamos qualidade real, com laudos, transparência e um
+                        padrão que fideliza o consumidor.</p>
+                </article>
+            </div>
+            <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Contate-nos</button>
+        </div>
+    </section>
+
+    <section class="assessment-container">
+        <div class="assessmentContent layout-grid">
+            <div>
+                <article>
+                    <div class="top">
+                        <div><img id="" src="/src/assets/imgs/Star 1.svg" alt=""></div>
+                        <p>Senti mais força e recuperação com a creatina da Iron Peak. Fez diferença real nos treinos de
+                            Jiu Jitsu.</p>
+                    </div>
+                    <div class="bottom">
+                        <img id="" src="/src/assets/imgs/Ellipse 1.svg" alt="">
+                        <h4>Paulo L.<br><span>Advogado</span></h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="top">
+                        <div><img id="" src="/src/assets/imgs/Star 1.svg" alt=""></div>
+                        <p>A cápsula de sal salvou meus treinos longos. Simples, eficaz e confiável.</p>
+                    </div>
+                    <div class="bottom">
+                        <img id="" src="/src/assets/imgs/Ellipse 2.svg" alt="">
+                        <h4>Netto P.<br><span>Triatleta</span></h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="top">
+                        <div><img id="" src="/src/assets/imgs/Star 1.svg" alt=""></div>
+                        <p>Gosto de saber que estou usando produtos puros e seguros. Dá confiança pra seguir evoluindo.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <img id="" src="/src/assets/imgs/Ellipse 3.svg" alt="">
+                        <h4>Fernanda C.<br><span>Dentista</span></h4>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="form-container layout-grid">
+        <h3>Vamos conversar?</h3>
+        <p>Preencha seus dados e receba uma proposta personalizada para sua loja, academia ou rede.</p>
+        <form id="formB2B">
+            <input class="half" type="text" name="nome" placeholder="Nome" required>
+            <input class="half" type="tel" name="telefone" placeholder="Telefone" required>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input class="half" type="text" name="cidade" placeholder="Cidade" required>
+            <input class="half" type="text" name="ramo" placeholder="Ramo Comercial" required>
+
+            <textarea name="mensagem" placeholder="Escreva sua mensagem...." required></textarea>
+
+            <button id="forms" type="submit">Enviar</button>
+        </form>
+
+        <script>
+            document.getElementById("formB2B").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                emailjs.sendForm('SEU_SERVICE_ID', 'SEU_TEMPLATE_ID', this)
+                    .then(function () {
+                        alert("Mensagem enviada com sucesso!");
+                    }, function (error) {
+                        alert("Erro ao enviar: " + JSON.stringify(error));
+                    });
+            });
+        </script>
+
     </section>
 </body>
 

@@ -36,6 +36,8 @@ body {
     flex-direction: column;
     align-items: center;
 
+    overflow-x: hidden;
+
     background-color: #034F71;
 }
 
@@ -182,7 +184,7 @@ body {
 }
 
 .hero-container2 button {
-    width: 25%;
+    width: 22%;
     height: 40px;
     font-family: Montserrat;
     font-size: 18px;
@@ -198,14 +200,22 @@ body {
     cursor: pointer;
 }
 
-.products-container{
+.hero-container2 button:hover {
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.4);
+
+    border: 1px solid white;
+}
+
+.products-container {
     background-color: white;
     width: 100vw;
 
     padding-bottom: 100px;
 }
 
-.products-container .productContent1{
+.products-container .productContent1 {
     margin-top: 100px;
 
     display: flex;
@@ -213,7 +223,7 @@ body {
     justify-content: space-between;
 }
 
-.products-container .productContent1 .productImg{
+.products-container .productContent1 .productImg {
     width: 40%;
     height: 300px;
     background-color: #E1F161;
@@ -227,11 +237,11 @@ body {
     border-radius: 0 50px 0 0;
 }
 
-.products-container .productContent1 .productImg img{
+.products-container .productContent1 .productImg img {
     width: 100%;
 }
 
-.products-container .productContent1 .productImgSalt{
+.products-container .productContent1 .productImgSalt {
     width: 40%;
     height: 300px;
     background-color: #57aabd5d;
@@ -245,42 +255,42 @@ body {
     border-radius: 0 50px 0 0;
 }
 
-.products-container .productContent1 .productImgSalt .new{
+.products-container .productContent1 .productImgSalt .new {
     background-color: #034F71;
     padding: 5px 20px;
 
     border-radius: 50px;
 }
 
-.products-container .productContent1 .productImgSalt .new h4{
+.products-container .productContent1 .productImgSalt .new h4 {
     font-family: Montserrat;
     color: white;
     font-size: 16px;
 }
 
-#saltCaps{
+#saltCaps {
     width: 60%;
 }
 
-.products-container .productContent1 .productAbout{
+.products-container .productContent1 .productAbout {
     width: 40%;
 
     margin-right: 100px;
 }
 
-.products-container .productContent1 .productAbout h2{
+.products-container .productContent1 .productAbout h2 {
     font-family: MontserratSemiBold;
     color: #034F71;
     font-size: 80px;
 }
 
-.products-container .productContent1 .productAbout h2 span{
+.products-container .productContent1 .productAbout h2 span {
     font-family: Montserrat;
     color: #034F71;
     font-size: 30px;
 }
 
-.products-container .productContent1 .productAbout p{
+.products-container .productContent1 .productAbout p {
     font-family: Montserrat;
     color: #034F71;
     font-size: 20px;
@@ -292,7 +302,7 @@ body {
 
 
 
-.products-container .productContent2{
+.products-container .productContent2 {
     margin-top: 100px;
 
     display: flex;
@@ -301,7 +311,7 @@ body {
     justify-content: space-between;
 }
 
-.products-container .productContent2 .productImg{
+.products-container .productContent2 .productImg {
     width: 40%;
     height: 300px;
     background-color: #91C4CE;
@@ -315,26 +325,371 @@ body {
     border-radius: 50px 0 0 0;
 }
 
-.products-container .productContent2 .productImg img{
+.products-container .productContent2 .productImg img {
     width: 100%;
 }
 
-.products-container .productContent2 .productAbout{
+.products-container .productContent2 .productAbout {
     width: 40%;
 
     margin-left: 100px;
 }
 
-.products-container .productContent2 .productAbout h2{
+.products-container .productContent2 .productAbout h2 {
     font-family: MontserratSemiBold;
     color: #034F71;
     font-size: 80px;
 }
 
-.products-container .productContent2 .productAbout p{
+.products-container .productContent2 .productAbout p {
     font-family: Montserrat;
     color: #034F71;
     font-size: 20px;
 
     width: 75%;
 }
+
+.about-container {
+    background-image: url(/src/assets/imgs/Group\ 400.svg);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 800px;
+}
+
+.about-container .aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .aboutContent h3 {
+    font-family: MontserratSemiBold;
+    color: #034F71;
+    font-size: 60px;
+}
+
+.about-container .aboutContent div {
+    display: flex;
+    gap: 50px;
+
+    margin: 80px 0 40px 0;
+}
+
+.about-container .aboutContent div article {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 40%;
+    height: 300px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    justify-content: center;
+}
+
+.about-container .aboutContent div article img {
+    width: 30%;
+}
+
+.about-container .aboutContent div article h4 {
+    font-family: MontserratSemiBold;
+    color: #034F71;
+    font-size: 26px;
+
+    margin-top: 30px;
+}
+
+.about-container .aboutContent div article p {
+    width: 100%;
+    font-family: Montserrat;
+    color: #034F71;
+    font-size: 16px;
+
+    margin: 10px 0;
+}
+
+.about-container .aboutContent button {
+    font-family: MontserratSemiBold;
+    font-size: 20px;
+
+    color: white;
+
+    width: 30%;
+    height: 60px;
+
+    border: none;
+    background-color: #034F71;
+    border-radius: 50px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+.about-container .aboutContent button:hover {
+    color: #034F71;
+    background-color: white;
+}
+
+
+.assessment-container {
+    background-image: url(/src/assets/imgs/Podia\ -\ 1480x800\ -\ 5.svg);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 800px;
+}
+
+.assessment-container .assessmentContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assessment-container .assessmentContent div {
+    display: flex;
+    flex-direction: row;
+
+    gap: 60px;
+}
+
+.assessment-container .assessmentContent div article {
+    background-color: white;
+    width: 35%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    !important justify-content: end;
+}
+
+.assessment-container .assessmentContent div article .bottom {
+    background-color: #034F71;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+.assessment-container .assessmentContent div article .bottom img {
+    width: 20%;
+}
+
+.assessment-container .assessmentContent div article .bottom h4 {
+    font-family: MontserratSemiBold;
+    font-size: 20px;
+
+    color: white;
+
+    margin-left: 10px;
+}
+
+.assessment-container .assessmentContent div article .bottom h4 span {
+    font-family: Montserrat;
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.assessment-container .assessmentContent div article .top {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+.assessment-container .assessmentContent div article .top img {
+    width: 50%;
+}
+
+.assessment-container .assessmentContent div article .top p {
+    font-family: Montserrat;
+    color: black;
+    font-size: 18px;
+
+    margin: 10px 0;
+
+    width: 90%;
+
+    margin-top: 20px;
+}
+
+.form-container {
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container h3 {
+    font-family: MontserratSemiBold;
+    font-size: 48px;
+
+    color: white;
+}
+
+.form-container p {
+    width: 50%;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 60%;
+
+    margin-top: 50px;
+}
+
+input,
+textarea {
+    font-family: Montserrat;
+
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    width: 98%;
+    outline: none;
+}
+
+textarea {
+    border-radius: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #cfeaf2;
+}
+
+.half {
+    width: 48%;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+#forms {
+    width: 30%;
+    background: white;
+    color: #004b66;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-left: auto;
+
+    font-family: MontserratSemiBold;
+    font-size: 15px;
+}
+
+#forms:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1400px) {
+    .hero-container .layout-grid h1 {
+        font-size: 300px;
+        top: 40px;
+    }
+
+    .hero-container .layout-grid .heroContent {
+        gap: 20px;
+    }
+
+    .hero-container .layout-grid .heroContent img {
+        width: 45%;
+    }
+
+    .hero-container .layout-grid .heroContent .autoLayout-Hero {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-container .layout-grid h1 {
+        font-size: 250px;
+    }
+
+    .hero-container2 h3 {
+        font-size: 48px;
+    }
+
+    .products-container .productContent1,
+    .products-container .productContent2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .products-container .productContent1 .productImg,
+    .products-container .productContent2 .productImg,
+    .products-container .productContent1 .productImgSalt {
+        width: 80%;
+        height: auto;
+    }
+
+    .products-container .productAbout {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-container .layout-grid h1 {
+        font-size: 200px;
+        top: 60px;
+    }
+
+    .hero-container .layout-grid .heroContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container .layout-grid .heroContent img {
+        width: 60%;
+    }
+
+    .hero-container .layout-grid .heroContent .autoLayout-Hero {
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero-container2 button {
+        width: 50%;
+    }
+}   
